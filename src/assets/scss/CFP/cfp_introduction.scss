@@ -1,7 +1,7 @@
 // font
 $fontFamily: 'Noto Sans TC', sans-serif;
 $fontStyle: normal;
-$light-blue: #3D93E9;
+$linkColor: #3D93E9;
 $fontColor: #226bb4;
 $buttonHoverColor: #ffffff;
 @mixin Font() {
@@ -109,6 +109,20 @@ $buttonHoverBg: #226BB4;
     
     position: relative;
     z-index: 5;
+
+    &:hover {
+      // box
+      background-color: $buttonHoverBg;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.19);
+      // font
+      h3 {
+        color: $buttonHoverColor;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .button-post {
@@ -119,16 +133,6 @@ $buttonHoverBg: #226BB4;
     margin-top: -20px;
 
     z-index: 2;
-  }
-
-  .buttons:hover {
-    // box
-    background-color: $buttonHoverBg;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.19);
-    // font
-    h3 {
-      color: $buttonHoverColor;
-    }
   }
 
   .date {
@@ -221,7 +225,8 @@ h3 {
   // font
   font-size: $hyperlinkFontSize;
   letter-spacing: $hyperlinkLetterSpace;
-  color: $light-blue;
+  color: $linkColor;
+  text-decoration: none;
   font-weight: normal;
   line-height: 42px;
 }
