@@ -1,18 +1,19 @@
 <template>
   <div class="cfp">
     <!-- <h1>cfp</h1> -->
-    <Agenda />
+    <Info />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 
-import Agenda from "../components/CFP/Agenda.vue";
+// import Agenda from "../components/CFP/Agenda.vue";
+import Info from "./Info.vue";
 
 @Component({
   components: {
-    Agenda,
+    Info,
   },
 })
 export default class CFP extends Vue {

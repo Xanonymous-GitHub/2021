@@ -1,23 +1,18 @@
 <template>
   <div class="info">
-    
-    <Schedule/>
-    <Agenda/>
-
+    <SubInformation />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from "vue-property-decorator";
 // components
-import Schedule from '../components/CFP/Schedule.vue';
-import Agenda from '../components/CFP/Agenda.vue';
+import SubInformation from "../components/CFP/SubInformation.vue";
 
 @Component({
   components: {
-    Agenda,
-    Schedule
-  }
+    SubInformation,
+  },
 })
 export default class Info extends Vue {
   @Prop() private msg!: string;
