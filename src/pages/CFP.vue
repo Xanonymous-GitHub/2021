@@ -6,15 +6,15 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 // import Agenda from "../components/CFP/Agenda.vue";
-import Info from "./Info.vue";
+import Info from './Info.vue';
 
 @Component({
   components: {
-    Info,
-  },
+    Info
+  }
 })
 export default class CFP extends Vue {
   @Prop() private msg!: string;
