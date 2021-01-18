@@ -302,8 +302,8 @@ p.small-tag {
 .second-box {
   box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
   border-radius: 32px; 
-  transform: rotate(15deg) scale(1);
-  margin-top: 220px;
+  transform: rotate(15deg); 
+  margin-top: 180px;
   margin-bottom: -1900px; 
   margin-left: -700px;
   z-index: 1;
@@ -322,10 +322,11 @@ p.small-tag {
 }
 
 .des-text-path {
-  margin-bottom: -405px;
-  padding-top: 150px; 
-  margin-left: -150px; 
-  margin-top: 50px;
+  width: 1008px;
+  margin-bottom: -320px; 
+  padding-top: 65px; 
+  margin-left: -225px; 
+  margin-top: 120px;
   z-index: 2;
 }
 
