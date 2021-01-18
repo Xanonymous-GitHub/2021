@@ -1,0 +1,22 @@
+// global
+@import './reset.scss';
+@import './variable.scss';
+@import './color.scss';
+@import './util.scss';
+
+// components
+@import './footer.scss';
+
+.sitcon-burnfont {
+  color: $mid-blue;
+  font-weight: 900;
+}
+
+body {
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}

@@ -1,6 +1,7 @@
 <template>
   <div id="cfp">
     <!--h1>cfp</h1-->
+    <!-- <CfpBackground id="cfp-background"/> -->
     <main class="introduction-container">
       <div class="introduction">
         <h1>關於 SITCON</h1>
@@ -12,6 +13,7 @@
             訊有興趣的學生，能夠在年會裏齊聚一堂，彼此激盪、傳承、啟發，達到「學以致用、教學相長」的實際展現。
           </p>
         </div>
+        <div class="dividing"></div>
         <h2>歷屆年會網站</h2>
         <div class="thumbnails">
           <table class="img-table">
@@ -34,6 +36,7 @@
             </tr>
           </table>
         </div>
+        <div class="dividing"></div>
         <h2>參與討論！</h2>
         <div class="discuss-section">
           <p class="context">
@@ -46,17 +49,17 @@
             若你想進一步了解過往討論的內容，也歡迎在 HackMD 上查看 SITCON 2021
             的會議記錄。
           </p>
+          <div>
+            <div class="dividing"></div>
+            <button class="buttons">SITCON 論壇</button>
+            <button class="buttons">會議記錄</button>
+          </div>
         </div>
-        <div>
-          <button class="buttons">SITCON 論壇</button>
-          <button class="buttons">會議記錄</button>
-        </div>
+        
 
         <div class="topic-intro">
-          <h1>2021 年會主題</h1>
-          <h1>
-            <span class="enlarge">算盤的後裔</span>
-          </h1>
+          <h1 class="right">2021 年會主題</h1>
+          <h1 class="enlarge">算盤的後裔</h1>
           <p class="context">
             千年以前的人類，發明了各式各樣輔助算術的工具，在世界各地的文明中，皆能找到廣義上的「算盤」。隨著時代演進，那些原始的工具，逐步進化成為現代的計算機與電腦，更進一步發展為隨處可見的智慧型裝置。俗話說「站在巨人的肩膀上」，前人的智慧成果成為墊腳石，讓站在其之上的後人可以看得更高、更遠。科技層層疊疊、承先啟後，文明才能跨越時空持續成長。
           </p>
@@ -92,24 +95,27 @@
             >
           </p>
           <div>
+            <div class="dividing"></div>
             <button class="buttons">個人贊助方案</button>
           </div>
         </div>
       </div>
     </main>
+
     <Footer></Footer>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-
 // components
+// import CfpBackground from '@/components/background.vue';
 import Footer from '@/components/Footer.vue';
 
 @Component({
-  components: { Footer }
+  components: { Footer } //CfpBackground
 })
+
 export default class CFP extends Vue {
   @Prop() private msg!: string;
 }
@@ -120,5 +126,5 @@ export default class CFP extends Vue {
 @import "@/assets/scss/CFP/CFP.scss";
 @import "@/assets/scss/variable.scss";
 //@import "@/assets/scss/CFP/cfp_color.scss";
-@import "@/assets/scss/CFP/cfp_introduction.scss";
+@import "@/assets/scss/cfp_introduction.scss";
 </style>

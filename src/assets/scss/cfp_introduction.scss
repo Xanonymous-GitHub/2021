@@ -1,0 +1,540 @@
+@import './breakpoint.scss';
+@import './color.scss';
+// varible declare
+$fontFamily: Noto Sans CJK TC, sans-serif;
+$font-style-normal: normal;
+$font-weight-big: 900px;
+$font-weight-medium: medium;
+$font-weight-bold: bold;
+
+$font-size-h1-big: 72px;
+$font-size-h1: 48px;
+$font-size-h2: 36px;
+$font-size-h3: 24px;
+$font-size-context: 20px;
+$font-size-button: 18px;
+
+$font-size-h1-big-mobile:48px;
+$font-size-h1-mobile: 26px;
+$font-size-h2-mobile: 20px;
+$font-size-h3-mobile: 14px;
+$font-size-context-mobile: 14px;
+$font-size-button-mobile: 18px;
+
+$font-size-tag: 20px;
+$font-size-tag-mobile: 16px;
+$font-size-tag-sub-mobile: 12px;
+
+$font-size-smalltag: 14px;
+$font-size-smalltag-mobile: 8px;
+
+$line-spacing-20: 20px;
+$line-spacing-30: 30px;
+$line-spacing-42: 42px;
+$line-spacing-70: 70px;
+
+$character-spacing-non: 0px;
+$character-spacing-smaller: 0.14px;
+$character-spacing-small: 0.2px;
+
+$font-size-14: 14px;
+$font-size-20: 20px;
+$font-size-24: 24px;
+$font-size-26: 26px;
+$font-size-36: 36px;
+$font-size-48: 48px;
+
+$decoration-underline: underline;
+
+#cfp {
+  // .body {
+  //   background-image: url('./img/Background.svg');
+  // }
+
+  .introduction {
+    &-container {
+      
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      font-family: $fontFamily;
+      margin-left: 10%;
+      margin-top: 1108px;
+
+      @media screen and(max-width: 414px) {
+        margin-top: 733px;
+        margin-left: 3%;
+        width:414px;
+      }
+
+    }
+  
+    .about-section {
+      top: 1222px;
+      left: 278px;
+      width: 772px;
+      height: 162px;
+      text-align: left;
+      //font: normal normal medium 20px/42px Noto Sans CJK TC;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-context;
+      line-height: $line-spacing-42;
+      font-weight: $font-weight-medium;
+
+      letter-spacing: 0.2px;
+      color: #226BB4;
+      opacity: 1;
+
+      @media screen and (max-width: 414px) {
+        width: 340px;
+        height: 171px;
+      }
+    }
+
+    .discuss-section {
+      top: 1957px;
+      left: 278px;
+      width: 815px;
+      height: 164px;
+      text-align: left;
+
+      //font: normal normal medium 20px/42px $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-context;
+      line-height: $line-spacing-42;
+      font-weight: $font-weight-medium;
+
+      letter-spacing: $character-spacing-small;
+      color: $mid-blue;
+      opacity: 1;
+
+      @media screen and (max-width: 414px) {
+        width: 342px;
+      }
+    }
+
+    .topic-intro {
+      margin-top:500px;
+      top: 3007px;
+      left: 278px;
+      width: 1186px;
+      height: 295px;
+      text-align: left;
+      //font: normal normal medium 20px/42px Noto Sans CJK TC;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-context;
+      line-height: $line-spacing-42;
+      font-weight: $font-weight-medium;
+
+      letter-spacing: $character-spacing-small;
+      color: $mid-blue;
+      opacity: 1;
+
+      @media screen and (max-width: 414px) {
+        margin-top: 269px;
+        width: 342px;
+        height: 445px;
+      }
+    }
+
+    .last-part {
+      margin-top: 400px;
+      margin-bottom: 125px;
+      top: 3594px;
+      left: 278px;
+      width: 1186px;
+      height: 295px;
+
+      text-align: left;
+      //font: normal normal medium $font-size-context/$line-spacing-42 $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-context;
+      line-height: $line-spacing-42;
+      font-weight: $font-weight-medium;
+
+      letter-spacing: $character-spacing-small;
+      color: #226BB4;
+      opacity: 1;
+
+      @media screen and (max-width: 414px) {
+        margin-top: 366.69px;
+        width: 330px;
+      }
+    }
+
+    .buttons {
+      //font: $font-style-normal normal $font-weight-big $font-size-button/$line-spacing-30 $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-button;
+      line-height: $line-spacing-30;
+      font-weight: $font-weight-big;
+
+      letter-spacing: $character-spacing-non;
+      text-align: center;
+      color: $mid-blue;
+      opacity: 1;
+
+      box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
+      transition-duration: 0.2s;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 37px;
+      padding: 12px 25px 12px 25px;
+      font-size: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #ffffff;
+
+      @media screen and (max-width: 414px) {
+        //font: $font-style-normal normal $font-weight-big $font-size-button/$line-spacing-70 $fontFamily;
+        font-family: $fontFamily;
+        font-style: normal;
+        font-size: $font-size-button;
+        line-height: $line-spacing-30;
+        font-weight: $font-weight-big;
+        
+        letter-spacing: $character-spacing-non;
+        color: $mid-blue;
+        text-align: center;
+        font-family: $fontFamily;
+        opacity: 1;
+        
+        padding: 4px 8px 4px 8px;
+        margin-right: 15px;
+        margin-top: 20px;
+      }
+    }
+
+    .button-post {
+      //font: $font-style-normal normal $font-weight-big $font-size-button/$line-spacing-70 $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-button;
+      line-height: $line-spacing-70;
+      font-weight: $font-weight-big;
+
+      letter-spacing: $character-spacing-non;
+      color: $mid-blue;
+      text-align: center;
+      display: inline;
+
+      margin-left: 40px;
+      margin-top: -20px;
+
+      @media screen and (max-width: 414px) {
+        width: 414px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+      }
+    }
+
+    .buttons:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.19);
+      background-color: $mid-blue;
+      color: $white;
+    }
+
+    .date {
+      //font: $font-style-normal normal $font-weight-big $font-size-h2 $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-h2;
+      line-height: 50px;
+      font-weight: $font-weight-big;
+
+      display: inline;
+      margin-right: 35px;
+      vertical-align: bottom;
+
+      @media screen and (max-width: 414px) {
+        vertical-align:middle;
+        margin-right: 20px;
+        font-size: 26px;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    span {
+      color: var(--unnamed-color-226bb4);
+      color: #226BB4;
+    }
+
+    h1 {
+      //font: $font-style-normal normal $font-weight-big $font-size-h1/$line-spacing-70 $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-h1;
+      line-height: $line-spacing-70;
+      font-weight: $font-weight-big;
+      
+      letter-spacing: $character-spacing-non;
+      text-align: left;
+      color: $mid-blue;
+      opacity: 1;
+
+      .sub {
+        font-size: 30px;
+      }
+
+      @media screen and (max-width: 414px) {
+        font-size: $font-size-h1-mobile;
+      }
+
+    }
+
+    .right {
+      text-align: left;
+
+      @media screen and (max-width: 414px) {
+        text-align: right;
+      }
+    }
+
+    .enlarge {
+      //font: $font-style-normal normal $font-weight-big $font-size-h1-big/$line-spacing-70 $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-h1-big;
+      line-height: $line-spacing-70;
+      font-weight: $font-weight-big;
+      text-align: left;
+
+      color: $mid-blue;
+      letter-spacing: 3.6px;
+      color: #226BB4;
+      opacity: 1;
+
+      @media screen and (max-width: 414px) {
+        font-size: $font-size-h1-big-mobile;
+        text-align: right;
+      }
+    }
+
+    h2 {
+      //font: $font-style-normal normal $font-weight-big $font-size-h2/$line-spacing-70 $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-h2;
+      line-height: $line-spacing-70;
+      font-weight: $font-weight-big;
+
+      letter-spacing: $character-spacing-non;
+      text-align: left;
+      color: $mid-blue;
+      opacity: 1;
+
+      @media screen and (max-width: 414px) {
+        font-size: $font-size-h2-mobile;
+      }
+    }
+
+    h3 {
+      //font: $font-style-normal normal $font-weight-big $font-size-h3/$line-spacing-30 $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-h3;
+      line-height: $line-spacing-30;
+      font-weight: $font-weight-big;
+
+      letter-spacing: $character-spacing-non;
+      text-align: left;
+      color: $mid-blue;
+
+      @media screen and (max-width: 414px) {
+        font-size: $font-size-h3-mobile;
+        letter-spacing: $character-spacing-smaller;
+        line-height: $line-spacing-30;
+      }
+    }
+
+    .context {
+      //font: $font-style-normal normal $font-weight-big $font-size-context/$line-spacing-42 $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-context;
+      line-height: $line-spacing-42;
+      font-weight: $font-weight-big;
+
+      color: $mid-blue;
+      letter-spacing: $character-spacing-small;
+      text-align: left;
+      color: $mid-blue;
+      opacity: 1;
+
+      .align_right{
+        text-align: right;
+      }
+
+      @media screen and (max-width: 414px) {
+        //font: $font-style-normal normal $font-weight-big $font-size-context-mobile/$line-spacing-30 $fontFamily;
+        font-family: $fontFamily;
+        font-style: normal;
+        font-size: $font-size-context-mobile;
+        line-height: $line-spacing-30;
+        font-weight: $font-weight-big;
+        
+        letter-spacing: $character-spacing-smaller;
+      }
+    }
+
+    .detail {
+      //font: $font-style-normal normal $font-weight-medium $font-size-context/$line-spacing-42 $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-context;
+      line-height: $line-spacing-42;
+      font-weight: $font-weight-medium;
+
+      display: inline;
+      letter-spacing: $character-spacing-small;
+      color: $mid-blue;
+      vertical-align: bottom;
+      margin-right: 37px;
+
+      @media screen and (max-width: 414px) {
+        vertical-align: middle;
+        margin-right: 0px;
+        font-size: $font-size-context-mobile;
+      }
+    }
+
+    .content-hyperlink {
+      //font: $font-style-normal normal $font-weight-medium $font-size-context/$line-spacing-42 $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-context;
+      line-height: $line-spacing-42;
+      font-weight: $font-weight-medium;
+
+      letter-spacing: $character-spacing-non;
+      color: $mid-blue;
+      text-decoration: $decoration-underline;
+    
+      @media screen and (max-width: 414px){
+        font-size: $font-size-context-mobile;
+      }
+    }
+
+    p.tag {
+      //font: $font-style-normal normal $font-weight-big $font-size-tag/29px $fontFamily;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-size: $font-size-tag;
+      line-height: 29px;
+      font-weight: $font-weight-big;
+
+      letter-spacing: $character-spacing-non;
+      color: $mid-blue;
+      text-align: center;
+      opacity: 1;
+      line-height: 1;
+      margin-block-start: 0em;
+      margin-block-end: 0.5em;
+      
+      .sub {
+        font-size: $font-size-tag;
+        @media screen and (max-width: 414px) {
+          font-size: $font-size-tag-sub-mobile;
+        }
+      }
+
+      @media screen and (max-width: 414px) {
+        font-size: $font-size-tag-mobile;
+      }
+    }
+
+    p.small-tag {
+      margin-block-start: 0em;
+      margin-block-end: 0.5em;
+      font-size: $font-size-smalltag;
+      text-align: center;
+
+      @media screen and (max-width: 414px) {
+        margin-top:-8px;
+        font-size: $font-size-smalltag-mobile;
+      }
+    }
+
+    img {
+      border-radius: 4px;
+      margin-bottom: 12px;
+      width: 225px;
+      height: 152px;
+
+      @media screen and (max-width: 414px) {
+        border-radius: 2px;
+        width: 107px;
+        height: 72px;
+      }
+    }
+
+    .thumbnails {
+      top: 1580px;
+      left: 278px;
+      margin-left: -15.2px;/* remove outer border spacing */
+      
+      @media screen and (max-width: 414px) {
+        top: 1036px;
+        width: 390px;
+        margin-left: -8.5px;
+      }
+    }
+
+    .img-table{
+      border-style: none;
+      width: 772px;
+
+      //border-spacing: 25.2px 0px;//25.2
+      
+      @media screen and (max-width: 414px) {
+        width: 100%;
+        //border-spacing: 7.5px 0px;
+      }
+    }
+
+    .td-width{
+      text-align: center;
+      width: 225px;
+      
+      @media screen and (max-width: 414px){
+        text-align: center;
+        width: 107px;
+      }
+    }
+
+    .images {
+      box-shadow: 0px 3px 20px #5978CE8F;
+
+      @media screen and (max-width:414px){
+        box-shadow: 0px 1px 6px #5978CE8F;
+      }
+    }
+
+    a {
+      color: $light-blue;
+      text-decoration: none;
+      transition: all ease-in-out .3s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .dividing{
+      height: 50px;
+
+      @media screen and (max-width:414px){
+        height: 20px;
+      }
+    }
+  }
+}
