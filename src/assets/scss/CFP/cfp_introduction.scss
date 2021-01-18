@@ -1,0 +1,340 @@
+// font
+$fontFamily: 'Noto Sans TC', sans-serif;
+$fontStyle: normal;
+$light-blue: #3D93E9;
+$fontColor: #226bb4;
+$buttonHoverColor: #ffffff;
+@mixin Font() {
+  font-family: $fontFamily;
+}
+@mixin hyperlinkFont() {
+  text-decoration: underline;
+}
+// font size
+$h1FontSize: 30px;
+$h2FontSize: 24px;
+$h3FontSize: 16px;
+$contextFontSize: 13px;
+$buttonFontSize: 24px;
+
+$mh1FontSize: 26px;
+$mh2FontSize: 20px;
+$mh3FontSize: 14px;
+$mcontextFontSize: 14px;
+$hyperlinkFontSize: 14px;
+
+$enlargeFontSize: 55px;
+$subFontSize: 30px;
+// letter spacing
+$titleLetterSpace: 0;
+$contextLetterSpace: 0.2px;
+$buttonLetterSpace: 0;
+$hyperlinkLetterSpace: 0;
+
+// background
+$buttonHoverBg: #226BB4;
+
+#cfp-introd {
+    overflow: hidden;
+  .introduction-container {
+    overflow-x: hidden;
+    overflow-y: hidden; 
+    margin: -8px;
+  }
+
+  .introduction {
+    // flex
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    // font
+    @include Font;
+    color: $fontColor;
+    // size
+    margin-left: 15%;
+  }
+
+  .about-section {
+    // font
+    font-size: $contextFontSize;
+    letter-spacing: $contextLetterSpace;
+    line-height: 42px;
+
+  }
+
+  .discuss-section {
+    font-size: $contextFontSize;
+    letter-spacing: $contextLetterSpace;
+    line-height: 42px;
+  }
+
+  .topic-intro {
+    // size
+    margin-top: 130px;
+    // font
+    font-size: $contextFontSize;
+    letter-spacing: $contextLetterSpace;
+    line-height: 42px;
+  }
+
+  .last-part {
+    // size
+    margin-top: 70px;
+    height: 325px;
+    // font
+    font-size: $contextFontSize;
+    letter-spacing: $contextLetterSpace;
+    line-height: 42px;
+  }
+
+  .buttons {
+    // font
+    color: $fontColor;
+    font-size: $buttonFontSize;
+    letter-spacing: $buttonLetterSpace;
+    line-height: 30px;
+    // size
+    margin-right: 37px;
+    padding: 12px 15px 12px 15px;
+    // box
+    background-color: #ffffff;
+    box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
+    transition-duration: 0.2s;
+    border: none;
+    border-radius: 8px;
+    // display
+    display: inline-block;
+    
+    position: relative;
+    z-index: 5;
+  }
+
+  .button-post {
+    // display
+    display: inline;
+    // size
+    margin-left: 40px;
+    margin-top: -20px;
+
+    z-index: 2;
+  }
+
+  .buttons:hover {
+    // box
+    background-color: $buttonHoverBg;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.19);
+    // font
+    h3 {
+      color: $buttonHoverColor;
+    }
+  }
+
+  .date {
+    // display
+    display: inline;
+    // size
+    margin-right: 35px;
+    // again
+    vertical-align: bottom;
+  }
+}
+
+.introduction-container {
+
+h1, h2, h3, p, span {
+  color: $fontColor;
+}
+
+h1 {
+  // font
+  font-size: $h1FontSize;
+  line-height: 70px;
+  font-weight: 900;
+  letter-spacing: $titleLetterSpace;
+  .enlarge {
+    font-size: $enlargeFontSize;
+  }
+
+  .sub {
+    font-size: $subFontSize;
+  }
+}
+
+h2 {
+  // font
+  font-size: $h2FontSize;
+  letter-spacing: $titleLetterSpace;
+  font-weight: 900;
+  line-height: 70px;
+  margin: 0px;
+}
+
+h3 {
+  // Font
+  font-size: $h3FontSize;
+  letter-spacing: $titleLetterSpace;
+  font-weight: 900;
+  line-height: 15px;
+  margin: 0px;
+}
+
+.about-section > .context {
+  margin-right: 50%;
+}
+
+.topic-intro > .context {
+  margin-right: 30%;
+}
+
+.context {
+  // font
+  font-size: $contextFontSize;
+  line-height: 30px;
+  letter-spacing: $contextLetterSpace;
+  font-weight: normal;
+}
+
+.detail {
+  // display
+  display: inline;
+  // font
+  font-size: $contextFontSize;
+  line-height: 42px;
+  letter-spacing: $contextLetterSpace;
+  font-weight: normal;
+  // align
+  vertical-align: bottom;
+  // size
+}
+
+.context-span {
+  // font
+  font-size: $contextFontSize;
+  font-weight: 900;
+  letter-spacing: $contextLetterSpace;
+  line-height: 42px;
+}
+
+.context-hyperlink {
+  // font
+  font-size: $hyperlinkFontSize;
+  letter-spacing: $hyperlinkLetterSpace;
+  color: $light-blue;
+  font-weight: normal;
+  line-height: 42px;
+}
+
+p.tag {
+  // font
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0;
+  font-weight: 900;
+  // align
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+p.tag.sub {
+    font-size: 12px;
+    line-height: 10px;
+}
+
+p.small-tag {
+  margin-block-start: 0em;
+  margin-block-end: 0.5em;
+  font-size: 12px;
+  text-align: center;
+}
+
+//NOTE: the size should be smaller, this temporary size is provided to support min font size of browser
+.cfp-img {
+  // box
+  border-radius: 4px;
+  margin-bottom: 12px;
+  // size
+  width: 175px;
+  height: 118px;
+  box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
+}
+
+.thumbnails {
+  // box
+  margin-left: -25.5px;
+}
+
+.img-table {
+  // box
+  border-style: none;
+  border-spacing: 25.5px 0px; //25.5
+}
+
+.td-width {
+  vertical-align: top;
+}
+
+.tag-table{
+  // box
+  border-style: none;
+  border-spacing: 0px 0px; //25.5
+  // size
+  width: 500px;
+}
+
+.first-box {
+  box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
+  border-radius: 60px; 
+  transform: rotate(15deg); 
+  margin-bottom: -900px; 
+  margin-left: -200px;
+  margin-top: -300px;
+  z-index: 1;
+}
+
+.second-box {
+  box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
+  border-radius: 32px; 
+  transform: rotate(15deg); 
+  margin-top: 270px;
+  margin-bottom: -1900px; 
+  margin-left: -700px;
+  z-index: 1;
+}
+
+.box-back {
+  z-index: 2;
+}
+
+.SITCON-text-path {
+  transform: scale(0.7);
+  padding-left: 300px;
+  margin-right: -550px;
+  margin-bottom: -600px; 
+  padding-top: 300px;
+}
+
+.des-text-path {
+  transform: scale(0.7); 
+  margin-bottom: -565px; 
+  padding-top: 65px; 
+  margin-left: -350px; 
+  z-index: 2;
+}
+
+.des-blue-bar {
+  transform: rotate(15deg); 
+  margin-left: -400px; 
+  margin-top: 360px; 
+  margin-bottom: -1360px;
+}
+
+.paper-image {
+  transform: scale(0.75); 
+  margin-top: -240px; 
+  margin-left: 270px; 
+  margin-bottom: -710px;
+  z-index: 1;
+}
+
+}

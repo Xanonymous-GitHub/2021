@@ -1,11 +1,14 @@
 // global
-@import './reset.scss';
+// @import './reset.scss';
 @import './variable.scss';
 @import './color.scss';
 @import './util.scss';
 
 // components
 @import './footer.scss';
+@import './CFP/cfp_introduction.scss';
+@import './CFP/CFP.scss';
+@import './CFP/cfpBackground.scss';
 
 .sitcon-burnfont {
   color: $mid-blue;
@@ -20,12 +23,14 @@ body {
   flex-direction: column;
   height: 100vh;
   font-size: 14pt;
+  margin:0;
 }
 
 #app {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  margin: 0;
 }
 
 small {

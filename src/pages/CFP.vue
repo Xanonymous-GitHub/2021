@@ -1,7 +1,7 @@
 <template>
   <div class="cfp cfp-background">
     <CfpHeader id="cfp-header"/>
-
+    <IntrodContainer></IntrodContainer>
     
   </div>
 </template>
@@ -10,11 +10,12 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 // components
 import CfpHeader from '@/components/CFP/Header.vue';
-
+import IntrodContainer from '@/components/CFP/IntrodContainer.vue';
 
 @Component({
   components: {
-    CfpHeader
+    CfpHeader,
+    IntrodContainer
   }
 })
 export default class CFP extends Vue {
@@ -23,7 +24,6 @@ export default class CFP extends Vue {
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/CFP/CFP.scss";
-@import "@/assets/scss/CFP/cfpBackground.scss";
+
 </style>
 
