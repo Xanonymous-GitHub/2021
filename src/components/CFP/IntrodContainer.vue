@@ -92,7 +92,7 @@
                         <div class="button-post">
                             <button
                                 class="buttons"
-                                onclick="window.location.href='/cfp/news'"
+                                onclick="window.location.href='/news'"
                             ><h3>投稿資訊</h3></button>
                             <button
                                 class="buttons"
