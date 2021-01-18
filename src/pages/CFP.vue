@@ -79,7 +79,7 @@
 
         <div class="last-part">
           <h3>最後...</h3>
-          <h1>SITCON 贊助徵求</h1> <!--style="margin-top:-30px;"-->
+          <h1>SITCON 贊助徵求</h1>
           <p class="context">
             SITCON 的舉辦，除了有賴眾多志工的努力，也需要金錢的支持。<br />
             如果您認同 SITCON 的理念，歡迎以行動支持 SITCON
