@@ -194,8 +194,8 @@
                     <h2>Q&A</h2>
                     <div class="info-qa">
                         <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="1">
-                            <label class="info-qa__itemBox-title" for="1">Q：先備知識與目標受眾有何不同？
+                            <input class="info-qa__itemBox-input" type="radio"  name="radio" id="1">
+                            <label class="info-qa__itemBox-title" for="1"><p>先備知識與目標受眾有何不同？</p>
 
                                 <span class="info-qa__itemBox-checkmark"></span>
 
@@ -208,8 +208,8 @@
                             </div>
                         </div>
                         <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="2">
-                            <label class="info-qa__itemBox-title" for="2">Q：投稿主題是否有必要切合年會主題（算盤的後裔）？
+                            <input class="info-qa__itemBox-input" type="radio"  name="radio" id="2">
+                            <label class="info-qa__itemBox-title" for="2"><p>投稿主題是否有必要切合年會主題（算盤的後裔）？</p>
 
 
                                 <span class="info-qa__itemBox-checkmark"></span>
@@ -222,8 +222,8 @@
                             </div>
                         </div>
                         <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="3">
-                            <label class="info-qa__itemBox-title" for="3">Q：先備知識與目標受眾有何不同？
+                            <input class="info-qa__itemBox-input" type="radio"  name="radio" id="3">
+                            <label class="info-qa__itemBox-title" for="3"><p>先備知識與目標受眾有何不同？</p>
 
                                 <span class="info-qa__itemBox-checkmark"></span>
 
@@ -235,8 +235,8 @@
                             </div>
                         </div>
                         <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="4">
-                            <label class="info-qa__itemBox-title" for="4">Q：如果我的稿件預計會有多個講者，投稿時需要注意什麼？
+                            <input class="info-qa__itemBox-input" type="radio"  name="radio" id="4">
+                            <label class="info-qa__itemBox-title" for="4"><p>如果我的稿件預計會有多個講者，投稿時需要注意什麼？</p>
 
                                 <span class="info-qa__itemBox-checkmark"></span>
 
@@ -248,8 +248,8 @@
                             </div>
                         </div>
                         <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="5">
-                            <label class="info-qa__itemBox-title" for="5">Q：如果我入選第二階段，可以提供哪些補充資料？
+                            <input class="info-qa__itemBox-input" type="radio"  name="radio" id="5">
+                            <label class="info-qa__itemBox-title" for="5"><p>如果我入選第二階段，可以提供哪些補充資料？</p>
                                 <span class="info-qa__itemBox-checkmark"></span>
 
                             </label>
@@ -260,8 +260,8 @@
                             </div>
                         </div>
                         <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="6">
-                            <label class="info-qa__itemBox-title" for="6">Q：還有疑問怎麼辦？
+                            <input class="info-qa__itemBox-input" type="radio" name="radio" id="6">
+                            <label class="info-qa__itemBox-title" for="6"><p>還有疑問怎麼辦？</p>
 
                                 <span class="info-qa__itemBox-checkmark"></span>
 
