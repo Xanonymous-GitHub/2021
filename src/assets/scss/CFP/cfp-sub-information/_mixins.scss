@@ -34,9 +34,9 @@
 }
 
 @mixin sectionH2Fontsize() {
-  font-size: 36px;
-  @media only screen and (max-width: $max-width-big-0) {
-    font-size: 32px;
+  font-size: 32px;
+  @media only screen and (min-width: $max-width-big-0) {
+    font-size: 36px;
   }
   @media only screen and (max-width: $max-width-medium-0) {
     font-size: 30px;
@@ -103,10 +103,10 @@
       padding-top: 0;
       padding-bottom: 0;
       &-title {
-        margin-top: 20px;
+        margin-top: 30px;
       }
       &-text {
-        padding-top: 20px;
+        padding-top: 8px;
       }
     }
   }
