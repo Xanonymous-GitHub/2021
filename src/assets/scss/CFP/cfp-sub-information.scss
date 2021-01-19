@@ -6,6 +6,7 @@
 .info {
   width: 100%;
   font-family: $fontFamily-NotoSansTC;
+  position: relative;
 
   &-container {
     @include infoContainer();
@@ -79,11 +80,23 @@
           text-align: left;
           color: $color-mid-blue;
         }
+
+        &-extend {
+          @include sectionContentSubExtendWidth();
+        }
       }
     }
   }
 
-  //cfp-sub-information <subInformation> components (info-kind , info-qa)
+  &-sitcon-img {
+    &__box {
+      float: right;
+    }
+
+    @include sitconImg();
+  }
+
+  //cfp-sub-information <subInformation> kind, qa components
   &-kind {
     width: 100%;
     margin-top: 45px;
@@ -138,8 +151,10 @@
   }
 
   &-qa {
-    @include qaWeight();
+    @include qaLayout();
     margin-bottom: 120px;
+    float: left;
+    // margin: 0 auto;
     &__itemBox {
       border-radius: 29px;
       box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
