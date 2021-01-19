@@ -16,15 +16,18 @@ $fontFamily-NotoSansTC: "Noto Sans TC";
   clear: both;
 }
 
+$limitWidth: 80vw;
+
 //cfp-information <Agenda> component
 .info {
   &-container {
-    width: 80vw;
+    width: $limitWidth;
     margin: 0 auto;
   }
 
   &-section {
     @include clearFloat();
+    width: $limitWidth;
     h1 {
       height: 70px;
       font-family: $fontFamily-NotoSansTC;
@@ -36,9 +39,10 @@ $fontFamily-NotoSansTC: "Noto Sans TC";
       letter-spacing: normal;
       text-align: left;
       color: $color-mid-blue;
+      margin: 10px 0;
     }
     &__content {
-      width: 1320px;
+      width: $limitWidth;
       p {
         font-size: 18.5px;
         font-family: $fontFamily-NotoSansTC;
@@ -75,6 +79,7 @@ $fontFamily-NotoSansTC: "Noto Sans TC";
       }
 
       &--sub {
+        width: $limitWidth;
         h2 {
           height: 60px;
           font-family: $fontFamily-NotoSansTC;
@@ -86,24 +91,31 @@ $fontFamily-NotoSansTC: "Noto Sans TC";
           letter-spacing: normal;
           text-align: left;
           color: $color-mid-blue;
+          margin: 10px 0;
         }
       }
     }
   }
 
   &-kind {
-    background-color: blueviolet;
-    width: 1420px;
+    //background-color: blueviolet;
+    width: 90vw;
     margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
     &__itemBox {
-      float: left;
-      padding: 26px 20px 34px 20px;
+      width: 330px;
       border-radius: 13px;
       background-color: $color-mid-blue;
-      width: 354px;
-      height: 230px;
-      margin: 0 72px 62px 0;
-
+      padding: 26px 20px 34px 20px;
+      @media screen and (max-width: 1200px) {
+        width: 90%;
+        margin: 20px auto;
+      }
       &-title {
         color: $color-white;
         display: inline-block;
@@ -113,80 +125,161 @@ $fontFamily-NotoSansTC: "Noto Sans TC";
         font-weight: 900;
         font-stretch: normal;
         font-style: normal;
-        // line-height: 1.94;
         letter-spacing: normal;
         text-align: center;
-        //modify
         font-size: 34px;
-        // margin: 0 0px 0px 40px;
+        
       }
       &-text {
-        width: 350px;
-        height: 172px;
+        width: 100%;
+        //height: 172px;
         margin: 0 auto;
-
         text-align: left;
-
-        p {
+        
+        font-size: 19px;
+        P {
           color: $color-white;
           font-family: $fontFamily-NotoSansTC;
-          font-size: 19px;
-          font-weight: 500;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 2.1;
-          letter-spacing: 0.2px;
+          margin: 15px 0;
         }
         strong {
           font-weight: 900;
         }
       }
+
+    //     p {
+    //       color: $color-white;
+    //       font-family: $fontFamily-NotoSansTC;
+    //       font-size: 19px;
+    //       font-weight: 500;
+    //       font-stretch: normal;
+    //       font-style: normal;
+    //       line-height: 2.1;
+    //       letter-spacing: 0.2px;
+    //     }
+    //     
+    //   }
     }
+    
+
+
+    // &__itemBox {
+    //   float: left;
+    //   padding: 26px 20px 34px 20px;
+    //   border-radius: 13px;
+    //   background-color: $color-mid-blue;
+    //   width: 354px;
+    //   height: 230px;
+    //   margin: 0 72px 62px 0;
+
+    //   &-title {
+    //     color: $color-white;
+    //     display: inline-block;
+    //     text-align: center;
+    //     width: 100%;
+    //     font-family: $fontFamily-NotoSansTC;
+    //     font-weight: 900;
+    //     font-stretch: normal;
+    //     font-style: normal;
+    //     // line-height: 1.94;
+    //     letter-spacing: normal;
+    //     text-align: center;
+    //     //modify
+    //     font-size: 34px;
+    //     // margin: 0 0px 0px 40px;
+    //   }
+    //   &-text {
+    //     width: 350px;
+    //     height: 172px;
+    //     margin: 0 auto;
+
+    //     text-align: left;
+
+    //     p {
+    //       color: $color-white;
+    //       font-family: $fontFamily-NotoSansTC;
+    //       font-size: 19px;
+    //       font-weight: 500;
+    //       font-stretch: normal;
+    //       font-style: normal;
+    //       line-height: 2.1;
+    //       letter-spacing: 0.2px;
+    //     }
+    //     strong {
+    //       font-weight: 900;
+    //     }
+    //   }
+    // }
   }
 
   &-qa {
-    margin-bottom: 120px;
+    width: 1000px;
     &__itemBox {
       border-radius: 29px;
       box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
       background-color: $color-white;
-      margin: 0 0 30px 0;
-      &-title {
-        display: inline-block;
-        width: 1230px;
-        height: 30px;
-        padding: 11px 41px 11px 23px;
-
+      margin: 20px 0;
+      padding: 10px 20px;
+      cursor: pointer;
+      span {
         font-family: $fontFamily-NotoSansTC;
-        font-size: 24px;
+        color: $fontColor;
         font-weight: 900;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.25;
-        letter-spacing: normal;
-        text-align: left;
-        color: $color-mid-blue;
+        font-size: 20px;
+        line-height: 42px;
       }
-
-      &-input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-      }
-
-      &-input:checked ~ &-text {
+      p {
         display: block;
-        width: 94%;
-        margin: 0 auto;
-        padding-bottom: 20px;
-      }
-
-      &-text {
-        display: none;
-      }
-
-      &-checkmark {
+        width: 90%;
       }
     }
   }
+
+  // &-qa {
+  //   margin: 30px 0;
+  //   padding: 15px 0;
+  //   // margin-bottom: 120px;
+  //   &__itemBox {
+  //     border-radius: 29px;
+  //     box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
+  //     background-color: $color-white;
+  //     margin: 0 0 30px 0;
+  //     &-title {
+  //       display: inline-block;
+  //       width: 1230px;
+  //       height: 30px;
+  //       padding: 8px 41px 11px 23px;
+
+  //       font-family: $fontFamily-NotoSansTC;
+  //       font-size: 24px;
+  //       font-weight: 900;
+  //       font-stretch: normal;
+  //       font-style: normal;
+  //       line-height: 1.5;
+  //       letter-spacing: normal;
+  //       text-align: left;
+  //       color: $color-mid-blue;
+  //     }
+
+  //     &-input {
+  //       position: absolute;
+  //       opacity: 0;
+  //       cursor: pointer;
+  //     }
+
+  //     &-input:checked ~ &-text {
+  //       display: block;
+  //       width: 94%;
+  //       margin: 0 auto;
+  //       padding-bottom: 20px;
+  //     }
+
+  //     &-text {
+  //       display: none;
+  //     }
+
+  //     &-checkmark {
+  //     }
+  //   }
+  // }
 }

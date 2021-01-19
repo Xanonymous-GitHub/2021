@@ -190,87 +190,11 @@
                     </p>
                 </div>
                 <div class="info-section__content--sub">
-
                     <h2>Q&A</h2>
                     <div class="info-qa">
-                        <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="1">
-                            <label class="info-qa__itemBox-title" for="1">Q：先備知識與目標受眾有何不同？
-
-                                <span class="info-qa__itemBox-checkmark"></span>
-
-                            </label>
-                            <div class="info-qa__itemBox-text">
-                                <p>
-                                    「目標受眾」表示您預期何種人將會前來參與該場議程，此欄位可能表示為與會者的興趣、生活環境抑或年齡層。「先備知識」表示對該議程有興趣者，您建議須先備哪些基礎技術、能力或經驗，有助於了解與吸收該場議程的知識精華。舉例而言，若一講題為「在營隊中使用虛擬貨幣」，則先備知識可能是「沒有」，目標受眾可能是「有想要辦營隊的人」。而如果是有關
-                                    Julia 程式語言的演講，則先備知識可能是「知道平行運算是什麼」，目標受眾可能是「想用 Julia 做資料科學的人」。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="2">
-                            <label class="info-qa__itemBox-title" for="2">Q：投稿主題是否有必要切合年會主題（算盤的後裔）？
-
-
-                                <span class="info-qa__itemBox-checkmark"></span>
-
-                            </label>
-                            <div class="info-qa__itemBox-text">
-                                <p>
-                                    不用。審稿時僅會依照上文所述方式審查，不會因為切合主題就拿到比較高分，或因為與 主題無關就被扣分。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="3">
-                            <label class="info-qa__itemBox-title" for="3">Q：先備知識與目標受眾有何不同？
-
-                                <span class="info-qa__itemBox-checkmark"></span>
-
-                            </label>
-                            <div class="info-qa__itemBox-text">
-                                <p>
-                                    若我們認為您的稿件很優秀，但可能比較適合另一種形式，或者該形式的名額已經額滿、無法再增額時，我們會向您充分說明與溝通，並經您的同意後，轉換稿件類型。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="4">
-                            <label class="info-qa__itemBox-title" for="4">Q：如果我的稿件預計會有多個講者，投稿時需要注意什麼？
-
-                                <span class="info-qa__itemBox-checkmark"></span>
-
-                            </label>
-                            <div class="info-qa__itemBox-text">
-                                <p>
-                                    請在「暱稱/名字」欄位標示所有講者的稱呼，並在「演講大綱」詳細說明各個講者如何分配演講內容。稿件經接受者，無論講者人數，皆只提供一組可轉贈的入場票邀請碼、一張講者識別證、一份午餐餐盒與一份講者專屬迎賓禮。未佩戴識別證的講者，僅能在自己的演講時，於該議程時段進入議程所在的會議廳。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="5">
-                            <label class="info-qa__itemBox-title" for="5">Q：如果我入選第二階段，可以提供哪些補充資料？
-                                <span class="info-qa__itemBox-checkmark"></span>
-
-                            </label>
-                            <div class="info-qa__itemBox-text">
-                                <p>
-                                    您可以提供簡報檔案、講稿、演講錄音搭配簡報畫面製成影片，或是實際錄影，您可以自行決定是否提供上述的任何一項，作為補充資料。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info-qa__itemBox">
-                            <input class="info-qa__itemBox-input" type="radio" checked="checked" name="radio" id="6">
-                            <label class="info-qa__itemBox-title" for="6">Q：還有疑問怎麼辦？
-
-                                <span class="info-qa__itemBox-checkmark"></span>
-
-                            </label>
-                            <div class="info-qa__itemBox-text">
-                                <p>
-                                    歡迎來投稿者小聚與我們聊聊，或寄信至 session[at]sitcon.org 詢問，我們會儘速回應。
-                                </p>
-                            </div>
+                        <div class="info-qa__itemBox" v-for="item,index in QA" :key="index" @click="e=>fade(index)">
+                            <span>Q: {{item.Q}}</span>
+                            <p v-if="item.v">{{item.A}}</p>    
                         </div>
                     </div>
                 </div>
@@ -284,6 +208,42 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component({})
 export default class Agenda extends Vue {
-  @Prop() private msg!: string;
+  private QA = [
+      {
+          Q: '先備知識與目標受眾有何不同？',
+          A: '「目標受眾」表示您預期何種人將會前來參與該場議程，此欄位可能表示為與會者的興趣、生活環境抑或年齡層。「先備知識」表示對該議程有興趣者，您建議須先備哪些基礎技術、能力或經驗，有助於了解與吸收該場議程的知識精華。舉例而言，若一講題為「在營隊中使用虛擬貨幣」，則先備知識可能是「沒有」，目標受眾可能是「有想要辦營隊的人」。而如果是有關Julia 程式語言的演講，則先備知識可能是「知道平行運算是什麼」，目標受眾可能是「想用 Julia 做資料科學的人」。',
+          v: false
+      },
+      {
+          Q: '投稿主題是否有必要切合年會主題（算盤的後裔）？',
+          A: '不用。審稿時僅會依照上文所述方式審查，不會因為切合主題就拿到比較高分，或因為與 主題無關就被扣分。',
+          v: false
+      },
+      {
+          Q: '先備知識與目標受眾有何不同？',
+          A: '若我們認為您的稿件很優秀，但可能比較適合另一種形式，或者該形式的名額已經額滿、無法再增額時，我們會向您充分說明與溝通，並經您的同意後，轉換稿件類型。',
+          v: false
+      },
+      {
+          Q: '如果我的稿件預計會有多個講者，投稿時需要注意什麼？',
+          A: '請在「暱稱/名字」欄位標示所有講者的稱呼，並在「演講大綱」詳細說明各個講者如何分配演講內容。稿件經接受者，無論講者人數，皆只提供一組可轉贈的入場票邀請碼、一張講者識別證、一份午餐餐盒與一份講者專屬迎賓禮。未佩戴識別證的講者，僅能在自己的演講時，於該議程時段進入議程所在的會議廳。',
+          v: false
+      },
+      {
+          Q: '如果我入選第二階段，可以提供哪些補充資料？',
+          A: '您可以提供簡報檔案、講稿、演講錄音搭配簡報畫面製成影片，或是實際錄影，您可以自行決定是否提供上述的任何一項，作為補充資料。',
+          v: false
+      },
+      {
+          Q: '還有疑問怎麼辦？',
+          A: '歡迎來投稿者小聚與我們聊聊，或寄信至 session[at]sitcon.org 詢問，我們會儘速回應。',
+          v: false
+      }
+  ];
+
+  private fade = (index: number) => {
+      this.QA[index].v = !this.QA[index].v;
+  }
+
 }
 </script>
