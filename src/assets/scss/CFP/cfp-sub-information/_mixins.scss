@@ -1,3 +1,4 @@
+// .info-container
 @mixin infoContainer() {
   width: 80%;
   padding-left: 7%;
@@ -11,63 +12,12 @@
   }
 }
 
-@mixin sectionContentParagraphWidth() {
-  width: 92%;
-  @media only screen and (max-width: $max-width-small-0) {
-    width: 100%;
-    margin-left: 0;
-  }
-  @media only screen and (max-width: $max-width-small-1) {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
-@mixin ulPadding {
-  padding: 0 0 0 20px;
-  @media only screen and (max-width: $max-width-big) {
-    padding: 0 0 0 5px;
-  }
-  @media only screen and (max-width: $max-width-medium-1) {
-    padding: 0;
-  }
-}
-
-@mixin kind() {
-  @media only screen and (min-width: $max-width-big-0) {
-    padding-bottom: 450px;
-    &__itemBox {
-      height: 305px;
-      &-title {
-        margin-top: 15px;
-      }
-      &-text {
-        padding-top: 20px;
-      }
-    }
-  }
-  @media only screen and (max-width: $max-width-small-0) {
-    width: 100%;
-    &__itemBox {
-      width: 100%;
-      height: 201px;
-      margin-bottom: 20px;
-      margin-right: 0;
-      padding: 0;
-      &-title {
-        margin-top: 20px;
-      }
-      &-text {
-        width: 86%;
-      }
-    }
-  }
-}
+// .info-section
 @mixin sectionH1Fontsize() {
   font-size: 44px;
   @media only screen and (min-width: $max-width-big-0) {
-    font-size: 60px;
-    margin-bottom: 70px;
+    font-size: 48px;
+    margin-bottom: 50px;
   }
   @media only screen and (max-width: $max-width-medium-0) {
     font-size: 38px;
@@ -84,7 +34,7 @@
 }
 
 @mixin sectionH2Fontsize() {
-  font-size: 48px;
+  font-size: 36px;
   @media only screen and (max-width: $max-width-big-0) {
     font-size: 32px;
   }
@@ -99,6 +49,19 @@
   }
   @media only screen and (max-width: $max-width-small-1) {
     font-size: 24px;
+  }
+}
+
+//.info-section__content
+@mixin sectionContentParagraphWidth() {
+  width: 92%;
+  @media only screen and (max-width: $max-width-small-0) {
+    width: 100%;
+    margin-left: 0;
+  }
+  @media only screen and (max-width: $max-width-small-1) {
+    width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -118,6 +81,51 @@
   }
   @media only screen and (max-width: $max-width-small-1) {
     font-size: 14px;
+  }
+}
+
+@mixin ulPadding {
+  padding: 0 0 0 20px;
+  @media only screen and (max-width: $max-width-big) {
+    padding: 0 0 0 5px;
+  }
+  @media only screen and (max-width: $max-width-medium-1) {
+    padding: 0;
+  }
+}
+
+// .info-kind
+@mixin kind() {
+  @media only screen and (min-width: $max-width-big-0) {
+    padding-bottom: 330px;
+    &__itemBox {
+      height: 305px;
+      padding-top: 0;
+      padding-bottom: 0;
+      &-title {
+        margin-top: 20px;
+      }
+      &-text {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $max-width-small-0) {
+    width: 100%;
+    &__itemBox {
+      width: 100%;
+      height: 201px;
+      margin-bottom: 20px;
+      margin-right: 0;
+      padding: 0;
+      &-title {
+        margin-top: 20px;
+      }
+      &-text {
+        width: 86%;
+      }
+    }
   }
 }
 
@@ -162,6 +170,14 @@
   }
   @media only screen and (max-width: $max-width-small-1) {
     font-size: 14px;
+  }
+}
+
+// .info-qa
+@mixin qaWeight {
+  width: 93%;
+  @media only screen and (max-width: $max-width-small-0) {
+    width: 100%;
   }
 }
 
@@ -222,13 +238,6 @@
   }
   @media only screen and (max-width: $max-width-small-3) {
     height: 28px;
-  }
-}
-
-@mixin qaWeight {
-  width: 93%;
-  @media only screen and (max-width: $max-width-small-0) {
-    width: 100%;
   }
 }
 
