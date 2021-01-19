@@ -37,6 +37,10 @@ $hyperlinkLetterSpace: 0;
 $buttonHoverBg: #226bb4;
 
 #cfp {
+  * {
+    backface-visibility: hidden;
+  }
+
   h1,
   h2,
   h3 {
@@ -50,8 +54,9 @@ $buttonHoverBg: #226bb4;
   .introduction-container {
     overflow-x: hidden;
     overflow-y: hidden;
-    margin: -8px;
     position: relative;
+
+    padding: 250px 0 150px;
   }
 
   .introduction {
@@ -97,13 +102,14 @@ $buttonHoverBg: #226bb4;
 
   .topic-intro {
     // size
-    margin-top: 130px;
+    // margin-top: 130px;
     // font
     // font-size: $contextFontSize;
     letter-spacing: $contextLetterSpace;
     // line-height: 42px;
 
     // width: 1100px;
+    position: relative;
 
     @media screen and(max-width: 414px) {
       margin-top: 50%;
@@ -424,10 +430,10 @@ $buttonHoverBg: #226bb4;
     box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
     border-radius: 60px;
     transform: rotate(15deg);
-    margin-bottom: -800px;
-    margin-left: -200px;
-    margin-top: -300px;
-    z-index: 1;
+    // margin-bottom: -800px;
+    // margin-left: -200px;
+    // margin-top: -300px;
+    z-index: 0;
 
     @media screen and(max-width: 960px) {
       border-radius: 40px;
@@ -449,10 +455,17 @@ $buttonHoverBg: #226bb4;
     box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
     border-radius: 32px;
     transform: rotate(15deg);
-    margin-top: 270px;
-    margin-bottom: -1900px;
-    margin-left: -700px;
-    z-index: 1;
+    // margin-top: 270px;
+    // margin-bottom: -1900px;
+    // margin-left: -700px;
+
+    position: absolute;
+    z-index: -1;
+    width: 200%;
+    right: -150px;
+    height: calc(100% + 50px + 100%);
+    top: -50px;
+    background-color: #ffffff;
 
     @media screen and(max-width: 414px) {
       box-shadow: -10px 30px 30px 0 rgba(135, 152, 199, 0.56);
@@ -478,7 +491,7 @@ $buttonHoverBg: #226bb4;
   }
 
   .box-back {
-    z-index: 2;
+    z-index: 1;
 
     @media screen and(max-width: 960px) {
       margin-top: -10%;
@@ -489,11 +502,36 @@ $buttonHoverBg: #226bb4;
       margin-top: 0%;
       margin-left: -10%;
     }
+
+    .first-box {
+      position: absolute;
+      width: calc(100% + 2 * 125px);
+      height: calc(100% + 2 * 150px);
+      top: -125px;
+      left: -125px;
+      z-index: -1;
+      transform-origin: 35% 25%;
+      background-color: #ffffff;
+    }
+
+    &.box {
+      position: relative;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background: url('~@/assets/images/cfp/Path 740.svg') no-repeat;
+      width: 602px;
+      height: 647px;
+      position: absolute;
+      top: 20%;
+      left: 100%;
+      transform: scale(0.7);
+    }
   }
 
   .box-back2 {
-    z-index: 2;
-
     @media screen and(max-width: 960px) {
       margin-top: -10%;
       margin-left: -10%;
@@ -520,9 +558,14 @@ $buttonHoverBg: #226bb4;
   .des-text-path {
     //background: url(../../assets/images/cfp/Path_762.svg) no-repeat;
     transform: scale(0.7);
-    margin-bottom: -565px;
-    padding-top: 65px;
-    margin-left: -350px;
+    // margin-bottom: -565px;
+    // padding-top: 65px;
+    // margin-left: -350px;
+    position: relative;
+    transform: rotate(-15deg) scale(0.7);
+    transform-origin: center center;
+    bottom: 40px;
+    left: 1%;
     z-index: 2;
 
     @media screen and(max-width: 960px) {
@@ -543,9 +586,18 @@ $buttonHoverBg: #226bb4;
 
   .des-blue-bar {
     transform: rotate(15deg);
-    margin-left: -400px;
-    margin-top: 360px;
-    margin-bottom: -1360px;
+    // margin-left: -400px;
+    // margin-top: 360px;
+    // margin-bottom: -1360px;
+    width: 200vw;
+    height: 350px;
+    transform-origin: top center;
+    position: absolute;
+    left: -50%;
+    top: -75px;
+    z-index: -1;
+    display: inline-block;
+    background-color: rgb(34, 107, 180);
 
     @media screen and(max-width: 414px) {
       margin-left: -600px;
@@ -556,10 +608,14 @@ $buttonHoverBg: #226bb4;
 
   .paper-image {
     transform: scale(0.75);
-    margin-top: -240px;
-    margin-left: 270px;
-    margin-bottom: -710px;
-    z-index: 1;
+    // margin-top: -240px;
+    // margin-left: 270px;
+    // margin-bottom: -710px;
+    z-index: -1;
+
+    position: absolute;
+    right: -75%;
+    bottom: -120%;
 
     @media screen and(max-width: 414px) {
       z-index: 3;
@@ -753,8 +809,8 @@ $buttonHoverBg: #226bb4;
 
 #cfp-intro {
   .box-back {
-    margin-top: -120px;
-    width: 880px;
+    // margin-top: -120px;
+    width: 800px;
 
     .about-sitcon {
       margin-bottom: 2em;
@@ -795,6 +851,8 @@ $buttonHoverBg: #226bb4;
 
   .box-back2 {
     width: 760px;
+    margin-top: 400px;
+    position: relative;
 
     .about-topic {
       margin-bottom: 1em;

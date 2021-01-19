@@ -1,11 +1,11 @@
 <template>
   <main class="introduction-container">
     <div class="introduction">
-            <img src="@/assets/images/cfp/Path 740.svg" class="SITCON-text-path"/>
-            <svg width="1200" height="1000" class="first-box">
-              <rect width="1200" height="1000" style="fill:#ffffff;" />
-            </svg>
+      <!-- <img src="@/assets/images/cfp/Path 740.svg" class="SITCON-text-path"/> -->
       <div class="box-back box">
+        <svg class="first-box">
+          <rect width="1200" height="1000" style="fill:#ffffff;" />
+        </svg>
         <div class="about-sitcon">
           <h2>關於 SITCON</h2>
           <p>
@@ -70,18 +70,17 @@
 
       <!-- first part -->
       <!-- second part -->
-      <img src="@/assets/images/cfp/Path_762.svg" class="des-text-path"/> <!---->
-            <svg width="1500" height="1500" class="second-box">
-              <rect width="1500" height="1500" style="fill:#ffffff;" />
-            </svg>
-            <svg width="2000" height="350" class="des-blue-bar">
-              <rect width="2000" height="350" style="fill:#226BB4;" />
-            </svg>
-            <svg width="1500" height="900" class="hiden-box">
-              <rect width="1500" height="900" style="fill:#ffffff;" />
-            </svg>
+      <!-- <svg width="1500" height="900" class="hiden-box">
+        <rect width="1500" height="900" style="fill:#ffffff;" />
+      </svg> -->
 
-      <div class="box-back2 box" style="margin-top: 1000px">
+      <div class="box-back2 box">
+        <div class="des-blue-bar">
+          <img src="@/assets/images/cfp/Path_762.svg" class="des-text-path"/>
+        </div>
+        <svg width="1500" height="1500" class="second-box">
+          <rect width="1500" height="1500" style="fill:#ffffff;" />
+        </svg>
         <div class="topic-intro">
           <div class="about-topic">
             <h2>2021 年會主題</h2>
