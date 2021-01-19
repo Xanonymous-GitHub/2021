@@ -251,17 +251,20 @@
   }
 }
 @mixin qaTextMarginTop {
-  margin-top: 30px;
+  margin-top: 25px;
   @media only screen and (max-width: $max-width-small-1) {
     margin-top: 15px;
   }
 }
 
 @mixin qaQdisplay {
+  margin-left: 25px;
+
   &::before {
     content: "Q：";
   }
   @media only screen and (max-width: $max-width-medium-1) {
+    margin-left: 18px;
     &::before {
       content: "";
     }
