@@ -1,9 +1,9 @@
 <template>
-          <div class="info-container">
+       <div class="info-container">
         <!--    議程種類方塊     -->
-        <div class="info-section">
+        <section class="info-section">
             <h1>議程種類</h1>
-            <div class="info-section__content">
+            <article class="info-section__content">
                 <div class="info-kind">
                     <div class="info-kind__itemBox">
                         <div class=info-kind__itemBox-title>Presentation</div>
@@ -30,25 +30,25 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
         <!--    議程種類方塊     -->
         <!--    流程             -->
-        <div class="info-section">
+        <section class="info-section">
             <h1>流程</h1>
-            <div class="info-section__content">
+            <article class="info-section__content">
                 <p>
                     本年度 SITCON
                     年會將分為<strong>二階段投稿與審稿</strong>，第一階段決定是否接受稿件，第二階段安排演講廳。審稿委員於第一階段完成審稿後，將對外公告接受稿件清單，並通知投稿者提供第二階段所需之資料。SITCON
                     議程組於第二階段將依照投稿者提供的資料，以及公開的人氣投票結果，安排年會當日的演講廳與時段。第二階段的資料，不影響稿件接受與否。
                 </p>
-            </div>
-        </div>
+            </article>
+        </section>
         <!--    流程             -->
         <!--    投稿方式         -->
-        <div class="info-section">
+        <section class="info-section">
             <h1>投稿方式</h1>
-            <div class="info-section__content">
+            <article class="info-section__content">
                 <p>
                     稿件均經議程組形式審查，交予該領域之審稿委員審稿；審稿委員由 SITCON 工作人員、業界人士及學界人士組成。
                 </p>
@@ -95,13 +95,13 @@
                     </ul>
                     </p>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
         <!--    投稿方式         -->
         <!--    審稿方式         -->
-        <div class="info-section">
+        <section class="info-section">
             <h1>審稿方式</h1>
-            <div class="info-section__content">
+            <article class="info-section__content">
                 <p>
                     審稿委員將針對以下項目進行篩選：
                 <ul>
@@ -110,13 +110,13 @@
                     <li><span /><strong>適合聽眾：</strong>稿件是否適合 SITCON 大多數的與會者。經我們評估比較小眾的議程，將可能安排在較小的演講廳。</li>
                 </ul>
                 </p>
-            </div>
+            </article>
             <!--    審稿方式         -->
             <!--    投稿注意事項     -->
-        </div>
-        <div class="info-section">
+        </section>
+        <section class="info-section">
             <h1>投稿注意事項</h1>
-            <div class="info-section__content">
+            <article class="info-section__content">
                 <p>
                 <ul>
                     <li><span />SITCON 2021 採用 Google Forms 接收投稿。</li>
@@ -189,7 +189,7 @@
                     </ul>
                     </p>
                 </div>
-                <div class="info-section__content--sub-extend">
+                <div class="info-section__content--sub info-section__content--sub-extend">
                     <h2>Q&A</h2>
                     <div class="info-qa">
                         <div class="info-qa__itemBox">
@@ -282,9 +282,9 @@
                         <img src="@/assets/images/cfp/sitcon-img.svg" class="info-sitcon-img">
                     </div>
                 </div>
-            </div>
+            </article>
             <!--    投稿注意事項     -->
-        </div>
+        </section>
     </div>
 </template>
 

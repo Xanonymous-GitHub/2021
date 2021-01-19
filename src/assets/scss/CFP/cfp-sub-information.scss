@@ -167,6 +167,10 @@
         display: block;
         width: 100%;
 
+        &:hover {
+          cursor: pointer;
+        }
+
         p {
           @include qaTitleFontsize();
           @include qaTitleMarginTop();
