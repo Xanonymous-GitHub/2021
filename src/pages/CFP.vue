@@ -1,6 +1,6 @@
 <template>
-  <div class="cfp cfp-background">
-    <CfpHeader id="cfp-header"/>
+  <div id="cfp" class="cfp cfp-background">
+    <!-- CfpHeader id="cfp-header"/ -->
     <IntrodContainer></IntrodContainer>
     
   </div>
