@@ -68,11 +68,11 @@ $buttonHoverBg: #226bb4;
     @include Font;
     color: $fontColor;
     // size
-    margin-left: 15%;
+    padding: 0 15%;
     margin-top: 75px;
 
-    @media screen and(max-width: 414px) {
-      width: 100%;
+    @media screen and (max-width: 960px) {
+      padding: 0 30px;
     }
   }
 
@@ -373,8 +373,9 @@ $buttonHoverBg: #226bb4;
     border-radius: 4px;
     margin-bottom: 12px;
     // size
-    width: 175px;
-    height: 118px;
+    // width: 175px;
+    // height: 118px;
+    width: 100%;
     box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
 
     @media screen and (max-width: 414px) {
@@ -383,15 +384,6 @@ $buttonHoverBg: #226bb4;
       width: 111px;
       height: 75px;
       box-shadow: 0px 1px 6px rgba(89, 120, 206, 0.56);
-    }
-  }
-
-  .thumbnails {
-    // box
-    // margin-left: -20.5px;
-
-    @media screen and (max-width: 414px) {
-      margin-left: -9px;
     }
   }
 
@@ -493,16 +485,6 @@ $buttonHoverBg: #226bb4;
   .box-back {
     z-index: 1;
 
-    @media screen and(max-width: 960px) {
-      margin-top: -10%;
-      margin-left: -10%;
-    }
-
-    @media screen and(max-width: 414px) {
-      margin-top: 0%;
-      margin-left: -10%;
-    }
-
     .first-box {
       position: absolute;
       width: calc(100% + 2 * 125px);
@@ -528,18 +510,6 @@ $buttonHoverBg: #226bb4;
       top: 20%;
       left: 100%;
       transform: scale(0.7);
-    }
-  }
-
-  .box-back2 {
-    @media screen and(max-width: 960px) {
-      margin-top: -10%;
-      margin-left: -10%;
-    }
-
-    @media screen and(max-width: 414px) {
-      margin-top: -10%;
-      margin-left: -10%;
     }
   }
 
@@ -617,12 +587,14 @@ $buttonHoverBg: #226bb4;
     right: -75%;
     bottom: -120%;
 
-    @media screen and(max-width: 414px) {
-      z-index: 3;
-      margin-top: -840px;
-      margin-left: -140px;
-      margin-bottom: -1060px;
-      transform: rotate(-7deg) scale(0.35);
+    @media screen and(max-width: 768px) {
+      // z-index: 3;
+      // margin-top: -840px;
+      // margin-left: -140px;
+      // margin-bottom: -1060px;
+      // transform: rotate(-7deg) scale(0.35);
+      transform: scale(0.4);
+      right: unset;
     }
   }
 
@@ -810,7 +782,7 @@ $buttonHoverBg: #226bb4;
 #cfp-intro {
   .box-back {
     // margin-top: -120px;
-    width: 800px;
+    max-width: 800px;
 
     .about-sitcon {
       margin-bottom: 2em;
@@ -850,12 +822,18 @@ $buttonHoverBg: #226bb4;
   }
 
   .box-back2 {
-    width: 760px;
+    max-width: 760px;
     margin-top: 400px;
     position: relative;
 
     .about-topic {
       margin-bottom: 1em;
+
+      @media screen and (max-width:960px) {
+        h2, h1 {
+          text-align: right;
+        }
+      }
     }
 
     .cfp-deadline {
@@ -865,6 +843,22 @@ $buttonHoverBg: #226bb4;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
+        flex-wrap: wrap;
+
+        .rwd-mobile-text {
+          display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+          span:not(.rwd-mobile),
+          a {
+            margin-top: 1em;
+          }
+
+          .rwd-mobile-text {
+            display: inline;
+          }
+        }
       }
     }
 
