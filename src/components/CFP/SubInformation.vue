@@ -196,10 +196,10 @@
                         <div class="info-qa__itemBox">
                             <input class="info-qa__itemBox-input" type="radio"  name="radio" id="1">
                             <label class="info-qa__itemBox-title" for="1"><p>先備知識與目標受眾有何不同？</p>
-
-                                <span class="info-qa__itemBox-checkmark"></span>
-
-                            </label>
+                            <span class="info-qa__itemBox-checkmark">
+                                <div class="info-qa-icon"></div>
+                            </span>
+                            </label>      
                             <div class="info-qa__itemBox-text">
                                 <p>
                                     「目標受眾」表示您預期何種人將會前來參與該場議程，此欄位可能表示為與會者的興趣、生活環境抑或年齡層。「先備知識」表示對該議程有興趣者，您建議須先備哪些基礎技術、能力或經驗，有助於了解與吸收該場議程的知識精華。舉例而言，若一講題為「在營隊中使用虛擬貨幣」，則先備知識可能是「沒有」，目標受眾可能是「有想要辦營隊的人」。而如果是有關
@@ -210,11 +210,11 @@
                         <div class="info-qa__itemBox">
                             <input class="info-qa__itemBox-input" type="radio"  name="radio" id="2">
                             <label class="info-qa__itemBox-title" for="2"><p>投稿主題是否有必要切合年會主題（算盤的後裔）？</p>
-
-
-                                <span class="info-qa__itemBox-checkmark"></span>
-
+                                <span class="info-qa__itemBox-checkmark">
+                                     <div class="info-qa-icon"></div>
+                                </span>
                             </label>
+                            
                             <div class="info-qa__itemBox-text">
                                 <p>
                                     不用。審稿時僅會依照上文所述方式審查，不會因為切合主題就拿到比較高分，或因為與 主題無關就被扣分。
@@ -225,7 +225,9 @@
                             <input class="info-qa__itemBox-input" type="radio"  name="radio" id="3">
                             <label class="info-qa__itemBox-title" for="3"><p>先備知識與目標受眾有何不同？</p>
 
-                                <span class="info-qa__itemBox-checkmark"></span>
+                                <span class="info-qa__itemBox-checkmark">
+                                    <div class="info-qa-icon"></div>
+                                </span>
 
                             </label>
                             <div class="info-qa__itemBox-text">
@@ -238,7 +240,9 @@
                             <input class="info-qa__itemBox-input" type="radio"  name="radio" id="4">
                             <label class="info-qa__itemBox-title" for="4"><p>如果我的稿件預計會有多個講者，投稿時需要注意什麼？</p>
 
-                                <span class="info-qa__itemBox-checkmark"></span>
+                                <span class="info-qa__itemBox-checkmark">
+                                    <div class="info-qa-icon"></div>
+                                </span>
 
                             </label>
                             <div class="info-qa__itemBox-text">
@@ -250,8 +254,9 @@
                         <div class="info-qa__itemBox">
                             <input class="info-qa__itemBox-input" type="radio"  name="radio" id="5">
                             <label class="info-qa__itemBox-title" for="5"><p>如果我入選第二階段，可以提供哪些補充資料？</p>
-                                <span class="info-qa__itemBox-checkmark"></span>
-
+                                <span class="info-qa__itemBox-checkmark">
+                                    <div class="info-qa-icon"></div>
+                                </span>
                             </label>
                             <div class="info-qa__itemBox-text">
                                 <p>
@@ -263,7 +268,9 @@
                             <input class="info-qa__itemBox-input" type="radio" name="radio" id="6">
                             <label class="info-qa__itemBox-title" for="6"><p>還有疑問怎麼辦？</p>
 
-                                <span class="info-qa__itemBox-checkmark"></span>
+                                <span class="info-qa__itemBox-checkmark">
+                                    <div class="info-qa-icon"></div>
+                                </span>
 
                             </label>
                             <div class="info-qa__itemBox-text">

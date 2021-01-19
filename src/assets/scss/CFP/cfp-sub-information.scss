@@ -145,6 +145,8 @@
       box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
       background-color: $color-white;
       margin: 0 0 30px 0;
+
+      position: relative;
       &-title {
         @include qaTitleHeight();
         display: block;
@@ -164,6 +166,10 @@
           letter-spacing: normal;
           text-align: left;
           color: $color-mid-blue;
+        }
+        span {
+          @include qaIcon();
+          background-repeat: no-repeat;
         }
       }
 
@@ -188,6 +194,9 @@
         p {
           @include qaTextMarginTop();
         }
+        span {
+          transform: rotate(180deg);
+        }
       }
 
       &-text {
@@ -195,7 +204,18 @@
       }
 
       &-checkmark {
+        position: absolute;
+        top: 15px;
+        right: 30px;
       }
+
+      &-input:checked ~ &-checkmark {
+        transform: rotate(180deg);
+      }
+    }
+
+    &-icon {
+      @include qaIconSize();
     }
   }
 }
