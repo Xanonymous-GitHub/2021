@@ -6,7 +6,7 @@
             <svg width="890" height="900" class="first-box">
               <rect width="1000" height="1000" style="fill:#ffffff;" />
             </svg>
-            <div class="box-back">
+            <div class="box-back" style="padding-top: 30px;">
                 <h1>關於 SITCON</h1>
                 <div class="about-section">
                     <p class="context">
