@@ -291,6 +291,18 @@
   }
 }
 
+@media screen and (max-width: 450px)  {
+  #cfp-intro {
+    .box-back2 {
+      padding-top: 300px;
+
+      .give-me-money {
+        margin-top: 180px;
+      }
+    }
+  }
+}
+
 @include xs {
   #cfp-intro {
     padding-top: 126px;
